@@ -2,8 +2,8 @@
 //https://hacks.mozilla.org/2016/01/webgl-off-the-main-thread/
 (function(){
     var canvas = document.createElement("canvas");
-    canvas.width = 600;
-    canvas.height = 600;
+    canvas.width = 1920;
+    canvas.height = 1080;
     document.body.appendChild(canvas);
     var offscreen = canvas.transferControlToOffscreen();
     var worker = new Worker('mandelbrot.js');
